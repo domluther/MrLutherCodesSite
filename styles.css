@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #c1e1dc, #d4c1e0);
+    color: #343a40;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #d4c1e0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card-header {
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.for-teachers .project-card-header {
+    background-color: #c1e1dc;
+}
+
+.for-students .project-card-header {
+    background-color: #d4c1e0;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.project-card-body {
+    padding: 15px;
+}
+
+.project-description {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    color: #6c5ce7;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+}
