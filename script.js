@@ -1,8 +1,6 @@
 // Main JavaScript file for Mr Luther Codes portfolio
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Mr Luther Codes portfolio site loaded!');
-    
     // Add event listeners to project cards for enhanced interactivity
     const projectCards = document.querySelectorAll('.project-card');
     
